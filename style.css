@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    border:  3px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.display {
+    border:  1px solid black;
+    text-align: right;
+}
+
+.row{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+button {
+    width: 100%;
+}
