@@ -12,31 +12,37 @@
     <div class="container">
         <div class="calculator">
             <div class="display">
-                1234567890
+                <p class="display-text"></p>
             </div>
-            <div class="row row-one">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-            </div>
-            <div class="row row-two">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-            </div>
-            <div class="row row-three">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
-            </div>
-            <div class="row row-four">
-                <button>C</button>
-                <button>0</button>
-                <button>=</button>
-                <button>/</button>
+            <div class="buttons">
+                <div class="row row-one">
+                    <button class="number-button" onclick="displayValue(1)">1</button>
+                    <button class="number-button" onclick="displayValue(2)">2</button>
+                    <button class="number-button" onclick="displayValue(3)">3</button>
+                    <button class="operator-button" onclick="operatorPressed('+')">+</button>
+                </div>
+                <div class="row row-two">
+                    <button class="number-button" onclick="displayValue(4)">4</button>
+                    <button class="number-button" onclick="displayValue(5)">5</button>
+                    <button class="number-button" onclick="displayValue(6)">6</button>
+                    <button class="operator-button" onclick="operatorPressed('-')">-</button>
+                </div>
+                <div class="row row-three">
+                    <button class="number-button" onclick="displayValue(7)">7</button>
+                    <button class="number-button" onclick="displayValue(8)">8</button>
+                    <button class="number-button" onclick="displayValue(9)">9</button>
+                    <button class="operator-button multiply-button" onclick="operatorPressed('*')">*</button>
+                </div>
+                <div class="row row-four">
+                    <button class="number-button" onclick="displayValue(0)">0</button>
+                    <button class="decimal-button" onclick="displayValue('.')">.</button>
+                    <button class="equals-button" onclick="equalsPressed()">=</button>
+                    <button class="operator-button" onclick="operatorPressed('/')">/</button>
+                </div>
+                <div class="row row-five">
+                    <button class="clear-button" onclick="clearCalc()">Clear</button>
+                    <button class="delete-button" onclick="backspace()">Delete</button>
+                </div>
             </div>
         </div>
     </div>
